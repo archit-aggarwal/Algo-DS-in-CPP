@@ -15,9 +15,9 @@ using namespace std;
 
 bool matrix_search(vector<vector<int>> v, int x){
     int rows = v.size(), cols = v[0].size();
-    int s=0, e=rows-1;
+    int s=0, e=rows-1,m;
     while(s <= e){
-        int m = (s+e)/2;
+        m = (s+e)/2;
         if(v[m][0] > x)
             e = m-1;
         else if(v[m][cols-1] < x)
