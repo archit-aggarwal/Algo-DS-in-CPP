@@ -2,7 +2,7 @@
     Question: 
     Find the pivot element in a rotated and sorted array.
     Eg. 
-    Given array = {55, 23, 1, 78, 95, 103}
+    Given array = {9,11,1,3,5,7}
     ans = 1 is the pivot here.
  */
 
@@ -48,7 +48,7 @@ int find_pivot(vector<int> v){
   
 int main() 
 { 
-    vector<int> v{55, 23, 1, 78, 95, 103};
+    vector<int> v{9,11,1,3,5,7};
     cout << "Index of pivot element is " << find_pivot(v);
     return 0; 
 } 
